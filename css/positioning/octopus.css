@@ -1,0 +1,32 @@
+
+img{
+	display: block;
+	margin: auto
+
+}
+
+.octopus {
+	display: block;
+	margin: auto;
+    width: 15%;
+    padding-top: 10px;
+
+}
+
+
+.hat { 
+   position: relative; 
+   top: 100px;
+   width: 20%;
+   
+}
+
+.glasses {
+	position: relative;
+	bottom: 192px;
+	width: 10%;
+	
+	
+    
+
+}
