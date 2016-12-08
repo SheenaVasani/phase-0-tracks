@@ -10,6 +10,9 @@ garlic_bread = gets.chomp
 puts "would you like to enroll in the company's health insurance?"
 health_insurance = gets.chomp
 
-if age_year > "100" && garlic_bread == "yes" || health_insurance == "yes"
+if age_year < "100" && garlic_bread == "yes" || health_insurance == "yes"
 	puts "Probably not a vampire"
+end
+else age_year > "100" && garlic_bread == "no" || health_insurance == "no"
+  puts "Probably a vampire"
 end
