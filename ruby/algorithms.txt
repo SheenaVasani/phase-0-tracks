@@ -1,0 +1,67 @@
+
+RELEASE 0: Algorithm for personal robot using elevator
+
+- Wait until owner Sheena instructs you to go somewhere using elevator in the building
+- When owner Sheena asks you to go somewhere using elevator in the building
+  - Ask what floor number to go to
+  - Make a note of it in your database to recollect when you approach elevator
+- Walk out of room
+- Turn left and go straight towards grey closed steel doors. These are elevators.
+- Check database to remind you which floor number Sheena wanted you to go
+- If owner Sheena instructed to go up towards floors 5-10
+  - Press small arrow pointed upwards button to the right of the closed elevator doors
+- If owner Sheena instructed you to go down towards floors 1-4
+  - Press small arrow pointed downwards button to the right of the closed elevators doors
+- Now look up at large arrows pointing upwards and downwards above the elevator
+- Wait until one of the arrows has lighted up and the elevator make a “ding” sound
+- If you are going up towards floors 5-10
+  - Quickly enter elevator with arrow sign above elevator pointing upwards lighted up 
+- Otherwise
+  - Quickly enter elevator with lighted up arrow sign above elevator pointing down
+- Once inside, quickly position yourself in front of the large panel with a bunch of numbered buttons on it
+- Check database to remind you which floor number owner Sheena wanted you to go
+- Quickly look back at panel with numbers on it
+- Find the floor number owner Sheena instructed you to go to
+- Click on the number owner Sheena instructed you to go it
+
+RELEASE 1: Make a cheese and mustard sandwich
+
+If upstairs
+- Navigate to staircase
+- Walk downstairs to kitchen
+Otherwise
+- Walk to kitchen
+- Navigate to fridge in kitchen
+- Open kitchen door
+- Open first drawer located near the bottom of the fridge
+- Look inside this open first drawer
+  - Pick up cheese
+  - Pick up mustard
+- For each item of food you have just picked up:
+  - Until each item of food is placed on counter to the right of the fridge
+    - Carry each item out of fridge 
+    - Place upon counter
+- Look towards the right of the fridge
+- See loaf of bread enclosed in bag behind the kettle
+- Pick up loaf of bread enclosed in bag
+- Place hand inside of loaf of bread bag
+- Take out a slice of bread
+- Place bread on counter near cheese and mustard
+- Turn left
+- Walk towards second drawer in the middle to the right of sink
+- Open that drawer
+- Take out knife
+- Walk back to counter
+- Pick up cheese
+- Use knife to cut a slice of cheese
+- Place cheese on top of bread
+- Pick up mustard
+- Squeeze mustard on top of slice of cheese on bread for five seconds
+- For each slice of bread:
+ -Until each slice of bread has mustard spread all over it, or until mustard is squeezed out for five times on top of slice:
+  -Squeeze mustard for five seconds on slice of bread without cheese
+  -Squeeze mustard for five second on top of slice of bread with cheese
+- Put both slices of bread together
+
+
+
