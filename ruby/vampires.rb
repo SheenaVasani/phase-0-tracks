@@ -31,21 +31,25 @@ while survey < number
       puts "Probably a vampire"
   elsif age_year > 100 && garlic_bread == "no" && health_insurance == "no"
       puts "Almost certainly a vampire"
-  elsif 
+  else 
     	age_year > 100 && garlic_bread == "yes" && health_insurance == "yes"
   end 
+
     
   if name == "Drake Cula" || name == "Tu Fang"
       puts "Definitely a vampire"
   else
     	puts "Results inconclusive"
-  end 
+  end      
   
   if allergies == "sunshine"
     puts "Probably a vampire"
   end
 
 survey += 1
+
+puts "Actually, never mind! What do these questions have to do with anything. Let's all be friends."
+
 end
 
 
