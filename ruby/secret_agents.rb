@@ -64,6 +64,7 @@ end
 
 
 puts decrypt(encrypt("swordfish"))
+#It worked because all you're doing is essentially placing the first method into the second method's parameters. Because the second method is essentially a reversal of the first method, it produced the same word again. 
 
 #Ask user if they would like to decrypt or encrypt their password
 
