@@ -1,4 +1,4 @@
-until name = false 
+ until name = false 
 
 puts "What is your first name?"
 first_name = gets.chomp
@@ -7,7 +7,7 @@ name = true
 if first_name == "quit" 
       name = false 
       break 
-end 
+ end 
 
 puts "What is your last name?"
 last_name = gets.chomp
@@ -16,7 +16,7 @@ name = true
 if last_name == "quit" 
       name = false 
       break 
-end 
+ end 
 
 def fake_name (first_name, last_name)
   "#{last_name} #{first_name}"
@@ -71,4 +71,11 @@ end
 p name_converter(first_name, last_name)
 
 end 
+
+stored_names = [first_name, last_name]
+
+stored_names.each do|item|
+  puts "#{result} is also known as #{item}"
+end 
+
 
