@@ -1,8 +1,11 @@
  until name = false 
+  #keep asking user for first and last name so that method will keep giving fake name
 
 puts "What is your first name?"
 first_name = gets.chomp
 name = true 
+
+#if user writes "quit", end loop
 
 if first_name == "quit" 
       name = false 
@@ -13,14 +16,19 @@ puts "What is your last name?"
 last_name = gets.chomp
 name = true 
 
+#if user writes "quit", end loop
+
 if last_name == "quit" 
       name = false 
       break 
  end 
 
+# write a method swapping the positions of the first and last name 
 def fake_name (first_name, last_name)
   "#{last_name} #{first_name}"
 end 
+
+#write a method moving index up either one vowel or consonant 
 
 def name_converter(first_name, last_name)
   #1. swap the order names
@@ -47,6 +55,8 @@ def name_converter(first_name, last_name)
         # add next_letter to result
         result += vowel[new_index]
 
+        #follow same steps for moving forward next vowel for consonant 
+
     elsif consonant.include?(character)
       if character == "z"
         result += 'b'
@@ -71,6 +81,9 @@ end
 p name_converter(first_name, last_name)
 
 end 
+
+#store names in array
+#iterate through array so that new name is also known as the original names
 
 stored_names = [first_name, last_name]
 
