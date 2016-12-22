@@ -1,3 +1,19 @@
+def create_a_list(items)
+    items = items.split(' ')
+    list = {}
+    quantity = 0
+   
+    items.each do |item| 
+        list[item] = quantity 
+    end 
+
+    list 
+end 
+
+
+
+
+
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
