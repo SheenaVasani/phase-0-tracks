@@ -1,10 +1,10 @@
 class Santa
   attr_accessor :age, :gender, :ethnicity, :reindeer_ranking
   
-  def initialize(gender,ethnicity)
+  def initialize
      puts "Initialize Santa Instance"
-    @gender = gender
-    @ethnicity = ethnicity
+    @gender = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"].sample
+    @ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"].sample
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
     @age = rand(140)
     
@@ -42,11 +42,11 @@ class Santa
 
 end
 
-genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-each_santa = Santa.new(genders.sample,ethnicities.sample)
-
-100.times.collect { |description| Santa.new(genders.sample,ethnicities.sample)}
+100.times{santa = Santa.new
+  puts santa.gender 
+  puts santa.age
+  puts santa.ethnicity
+}
 
 #DRIVER CODE FOR OTHER RELEASES
 # santa = Santa.new
@@ -67,3 +67,5 @@ each_santa = Santa.new(genders.sample,ethnicities.sample)
 # santas = []
 # santas << Santa.new("female", "Indian")
 # santas << Santa.new("agender", "chicken")
+
+
