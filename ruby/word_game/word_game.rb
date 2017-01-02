@@ -1,5 +1,6 @@
 #create a Word_Game class
 #assign user input to object variable can access later
+#when all user's attempts stored in array matches secret word, user has won. otherwise, value is false and user has lost
 
 class Word_Game
 
@@ -24,8 +25,6 @@ puts "User 1, please type in your chosen secret word"
 #create array to store second player's correct letters
 correct_letters = []
 
-#when all user's attempts stored in array matches secret word, user has won. otherwise, value is false and user has lost
-answer = false 
 
 #create new instance/game of word game
 
