@@ -2,10 +2,12 @@
 #assign user input to object variable can access later
 
 class Word_Game
-    attr_accessor :secret_word
+
+    attr_accessor :secret_word, :answer
 
     def initialize
        @secret_word = gets.chomp
+       @answer = false 
     end 
     
 
@@ -60,7 +62,7 @@ end
 
  if correct_letters = @secret_word
             puts "well done! you've correctly guessed the word: #{game.secret_word}.you've won!"
-            answer = true 
+            game.answer = true 
         else 
           puts "haha you lost you suck"
             
