@@ -6,4 +6,8 @@ describe Word_Game do
     it "stores the secret_word given by user"
         expect(gets.chomp). to eq (@secret_word )
     end  
+
+    it "determines whether value is false and user has lost"
+        expect(false). to eq (@answer)
+    end 
 end  
