@@ -3,7 +3,9 @@
 
 class Word_Game
 
-    attr_accessor :secret_word, :answer
+    attr_reader :secret_word
+    attr_accessor :answer 
+    
 
     def initialize
        @secret_word = gets.chomp
@@ -16,7 +18,7 @@ end
 #ask player 1 to give the secret word
 #assign value to object variable defined in class
 
-puts "User 1, please type in your chosen secret_word"
+puts "User 1, please type in your chosen secret word"
 @secret_word = gets.chomp
 
 #create array to store second player's correct letters
