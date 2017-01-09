@@ -19,8 +19,8 @@ function big (array) {
 
     var cats = ["Fluffy", "Pookie", "asfddsfsdf"]
     var random = ["i am cat", "i am not a cat"]
-    console.log(big(dinner))
-    console.log(big(phrases)
+    console.log(big(cats)
+    console.log(big(random)
 
 //INPUT: TWO OBJECTS
 //OUTPUT: MATCHED KEY-VALUE PAIRS (IF ANY)
@@ -44,29 +44,39 @@ function Match(obj1, obj2) {
     return x
 };
 
+var obj1 = {name: "Jane", animal: "cat"};
+var obj2 = {name: "John", animal: "cat"};
+var obj3 = {name: "Jasmine", animal: "dog"}
+
+console.log(key_value_match(obj1, obj2)); 
+console.log(key_value_match(obj1, obj3)); 
+
 //INPUT: function that takes an integer for length
 //OUTPUT: an array of strings of the same length
+//
+function testing() {
+    var word= "";
+    var size = Math.floor((Math.random() * 25) + 1);
+    var x = "abcdefghijklmnopqrstuvwxyz"
 
-function random () {
-    var randomized_string = "";
-    var length = Math.floor((Math.random() * 10) + 1);
-    var letters = "qwertyuiopasdfghjklzxcvbnm".toUpperCase()
     for (var i = 0; i < length; i++){
-        randomized_string += letters.charAt(Math.floor(Math.random() * letters.length));
+        string += letters.charAt(Math.floor(Math.random() * x.length));
     }
-    return randomized_string
+    
+   return word 
     
 }
 
-function create_array(length) {
+function make_array(size) {
     var arr = [];
     for (var i = 0; i < length; i++) {
-    arr.push(random_string());
+    arr.push(word());
     }
     return arr
 }
 for (var i = 0; i < 10; i++) {
-    var newArray = create_array(i +1 )
-    console.log(newArray)
+//reassign variable??? ask...
+    
 
 }
+
