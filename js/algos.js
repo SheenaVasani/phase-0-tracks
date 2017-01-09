@@ -53,7 +53,9 @@ console.log(key_value_match(obj1, obj3));
 
 //INPUT: function that takes an integer for length
 //OUTPUT: an array of strings of the same length
-//
+//create string of a word with random letters
+//iterate for length and letters
+//make array, push word into it, return array
 function testing() {
     var word= "";
     var size = Math.floor((Math.random() * 25) + 1);
