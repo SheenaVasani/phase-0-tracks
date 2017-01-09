@@ -17,8 +17,6 @@ function big (array) {
 
     }
 
-    //NOT SURE WHY NOT WORKING - need to ask. HERE IS DRIVER CODE ANYWAYS:
-
     var cats = ["Fluffy", "Pookie", "asfddsfsdf"]
     var random = ["i am cat", "i am not a cat"]
     console.log(big(dinner))
@@ -26,22 +24,49 @@ function big (array) {
 
 //INPUT: TWO OBJECTS
 //OUTPUT: MATCHED KEY-VALUE PAIRS (IF ANY)
-//create function that takes two key value pairs of objects
-//assign variables for comparison
-//loop to compare repeatedly 
+//create function that takes two key value pairs of objects 
+//loop to compare repeatedly: 
 //return true if found a match, otherwise false 
 
-function matching(first, second){
-  var first = Object.keys(obj1);
-  var second = Object.keys(obj2);
-  for(var i = 0; i < obj_one.length; i++){
-    var key1 = first[i];
-    var key2 = second[i];
-    
-    if(first[key1] === second[key2]) {
-      return true;
+function Match(obj1, obj2) {
+    var x = false 
+    for (key in obj1) {
+        for (keys in obj2) {
+            if (obj1[key] == obj2[keys]) {  
+                result = true 
+                
+            }
+        }
     }
-  }
+    if (Object.keys(obj1).length != Object.keys(obj2).length) {
+        result = false
+    }
+    return x
+};
 
+//INPUT: function that takes an integer for length
+//OUTPUT: an array of strings of the same length
+
+function random () {
+    var randomized_string = "";
+    var length = Math.floor((Math.random() * 10) + 1);
+    var letters = "qwertyuiopasdfghjklzxcvbnm".toUpperCase()
+    for (var i = 0; i < length; i++){
+        randomized_string += letters.charAt(Math.floor(Math.random() * letters.length));
+    }
+    return randomized_string
+    
 }
 
+function create_array(length) {
+    var arr = [];
+    for (var i = 0; i < length; i++) {
+    arr.push(random_string());
+    }
+    return arr
+}
+for (var i = 0; i < 10; i++) {
+    var newArray = create_array(i +1 )
+    console.log(newArray)
+
+}
