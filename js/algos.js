@@ -23,3 +23,25 @@ function big (array) {
     var random = ["i am cat", "i am not a cat"]
     console.log(big(dinner))
     console.log(big(phrases)
+
+//INPUT: TWO OBJECTS
+//OUTPUT: MATCHED KEY-VALUE PAIRS (IF ANY)
+//create function that takes two key value pairs of objects
+//assign variables for comparison
+//loop to compare repeatedly 
+//return true if found a match, otherwise false 
+
+function matching(first, second){
+  var first = Object.keys(obj1);
+  var second = Object.keys(obj2);
+  for(var i = 0; i < obj_one.length; i++){
+    var key1 = first[i];
+    var key2 = second[i];
+    
+    if(first[key1] === second[key2]) {
+      return true;
+    }
+  }
+
+}
+
