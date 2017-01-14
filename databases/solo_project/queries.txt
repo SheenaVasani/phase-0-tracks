@@ -69,4 +69,4 @@ sqlite> SELECT party FROM Presidents
    ...> UNION
    ...> SELECT name FROM Parties;
 Democrat
-sqlite> 
+sqlite> rain
