@@ -1,0 +1,72 @@
+1) Display the information in one table (either table is fine):
+
+SELECT * FROM Presidents;
+
+Donald Trump|45|Republican|2
+Barack Obama|44|Democrat|1
+George W. Bush|43|Republican|2
+Bill Clinton|42|Democrat|1
+George H.W. Bush|41|Republican|2
+
+2)Update an item that meets some condition (you can choose a condition that makes sense).
+
+Shortened political party to either “R” or “D”
+
+sqlite> UPDATE Presidents SET party="R" WHERE name="Donald Trump";
+sqlite> SELECT name, number, party, Parties_id FROM Presidents;
+Donald Trump|45|R|2
+Barack Obama|44|Democrat|1
+George W. Bush|43|Republican|2
+Bill Clinton|42|Democrat|1
+George H.W. Bush|41|Republican|2
+sqlite> UPDATE Presidents SET party="R" WHERE name="George W. Bush";
+sqlite> UPDATE Presidents SET party="R" WHERE name="George H. W. Bush";
+sqlite> UPDATE Presidents SET party="D" WHERE name="Barack Obama";
+sqlite> UPDATE Presidents SET party="D" WHERE name="Bill Clinton";
+sqlite> SELECT name, number, party, Parties_id FROM Presidents;
+Donald Trump|45|R|2
+Barack Obama|44|D|1
+George W. Bush|43|R|2
+Bill Clinton|42|D|1
+George H.W. Bush|41|Republican|2
+sqlite> UPDATE Presidents SET party="R" WHERE name="George H.W. Bush";
+sqlite> SELECT name, number, party, Parties_id FROM Presidents;
+Donald Trump|45|R|2
+Barack Obama|44|D|1
+George W. Bush|43|R|2
+Bill Clinton|42|D|1
+George H.W. Bush|41|R|2
+
+
+3) Display the information in both tables using one query.
+
+SELECT * FROM Presidents, Parties WHERE Presidents.Parties_id = Parties.id;
+1|Donald Trump|45|R|2|2|Republican
+2|Barack Obama|44|D|1|1|Democrat
+3|George W. Bush|43|R|2|2|Republican
+4|Bill Clinton|42|D|1|1|Democrat
+5|George H.W. Bush|41|R|2|2|Republican
+
+4) Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT Presidents.name, Parties.name FROM Presidents JOIN Parties ON Presidents.Parties_id = Parties.id;
+Donald Trump|Republican
+Barack Obama|Democrat
+George W. Bush|Republican
+Bill Clinton|Democrat
+George H.W. Bush|Republican
+
+5) Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM Parties WHERE name="Republican";
+sqlite> SELECT * FROM Parties;
+1|Democrat
+sqlit
+
+RELEASE 3:
+
+sqlite> SELECT party FROM Presidents
+   ...> UNION
+   ...> SELECT name FROM Parties;
+Democrat
+sqlite> 
