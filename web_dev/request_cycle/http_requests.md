@@ -15,3 +15,4 @@ Some specific examples:
 2) What is the difference between a GET request and a POST request? When might each be used?
 
 GET requests are used to retrieve data from a resource while a POST request is used to submit data - for example, from an HTML form - to a resource 
+
