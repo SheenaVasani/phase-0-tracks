@@ -1,0 +1,97 @@
+body {
+	font-family: verdana;
+}
+
+
+.title {
+
+    float: left;
+    margin:0px 0px 20px 0px;
+    padding: 10px 0px 0px 10px ;
+    width: 100%;
+  background-image:url("https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/14495468_10157648270230160_8816806621081128703_n.jpg?oh=b8bcf251555f8f798ab1d50e89060e6f&oe=58F7613D");
+
+}
+
+h1 {
+	font-family: trebuchet ms;
+	color: white;
+	font-size: 70px;
+
+	 
+}
+
+
+blockquote {
+	font-size: 14px;
+	font-style: italic;
+ 
+}
+
+
+
+.table {
+	color: lightpink;
+}
+  
+ p { text-align: center 
+
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: pink;
+}
+
+/* selected link */
+a:active {
+    color: purple;
+}
+
+.sub {
+	color: lightpink;
+}
+#critique {
+	font-size: 16px;
+	font-style: italic;
+	color: orange;
+
+}
+
+.socialmedia {
+	text-align: center;
+	font-size: 40px;
+	color: gold;
+	border-style: solid;
+    border-width: 10px;
+    padding: 30px;
+    float: left;
+    margin:0px 0px 20px 0px;
+    padding: 10px 0px 0px 10px ;
+    width: 100%;
+  background-image:url("https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/14495468_10157648270230160_8816806621081128703_n.jpg?oh=b8bcf251555f8f798ab1d50e89060e6f&oe=58F7613D");
+
+}
+
+@media screen and (max-width: 500px) {
+
+	body {
+	font-family: verdana;
+	font-size: 50px;
+
+}
+ 
+  }
+
+
+
