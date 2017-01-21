@@ -1,0 +1,76 @@
+<html>
+        <head>
+          <link rel="stylesheet" href="styles.css" type="text/css">
+            <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+            <script type="text/javascript">
+            
+            </script>
+        </head>
+
+        <meta charset = "utf-8">
+      <title>jQuery UI ProgressBar functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <style>
+         .ui-widget-header {
+            background: #cedc98;
+            border: 1px solid #DDDDDD;
+            color: #333333;
+            font-weight: bold;
+         }
+      </style>
+      
+      <script>
+         $(function() {
+            $( "#progressbar-1" ).progressbar({
+               value: 30
+            });
+         });
+      </script>
+
+  <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("ul").hide();
+    });
+});
+</script>
+
+
+        <body>
+
+        <header class="title"> <center> <h1> Sheena's Learning jQuery </h1> </center> </header>
+
+        <blockquote> <center> “Talk is cheap. Show me the code.” ― Linus Torvalds</center></blockquote>
+
+        <center><b><u> SOME JQUERY EXAMPLES: </center></b></u>
+
+        <ul>
+      <li> My first experiment: learning how to add a click event to "Click Me"
+            <center> <a href="#">Click Me</a> </center> </li>
+      <li> My second experiment: learning how to add a progress bar.
+
+             <div id = "progressbar-1"></div>  </li>
+      <li> My third experiment: <button>Click me to hide this list randomly </button>
+ </li>
+    </ul> 
+ 
+ <center><b><u> SOME USEFUL WEBSITES: </center></b></u>
+    <ul>
+      <li> <a href="http://www.w3schools.com/jquery/">W3 SCHOOLS: JQUERY</a> </li>
+      <li> <a href="https://oscarotero.com/jquery/">Pretty Boss Cheat Sheet (image below from this site)</a> </li>
+
+    </ul> 
+
+
+<center> <img src="images/cheatsheet.jpg" alt="cheatsheet" /> </center>
+    
+    <hr>
+
+        
+        
+        </body>
+    </html>
