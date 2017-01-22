@@ -76,6 +76,6 @@ get '/plus/:number_1/:number_2' do
 
   "#{params[:number_1]} + #{params[:number_2]} = #{response}"
 
-end
+    end 
 
 end 
